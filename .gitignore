@@ -1,0 +1,23 @@
+# Secrets -- never commit this
+.env
+
+# Persisted vector store (regenerate with `python ingest.py`)
+chroma_db/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Narration WAVs -- regenerate with: cd video && python build_narration.py
+video/segments/
+video/screen_raw.mkv
+video/demo_final.mp4

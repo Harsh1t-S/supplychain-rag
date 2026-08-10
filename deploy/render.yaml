@@ -1,0 +1,26 @@
+# Render.com blueprint. Push this repo, then "New > Blueprint" on Render.
+# Set OPENAI_API_KEY in the Render dashboard under Environment -- never here.
+services:
+  - type: web
+    name: supplychain-rag
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false          # prompts you in the dashboard; never committed
+      - key: PYTHON_VERSION
+        value: "3.11"
+
+  - type: web
+    name: supplychain-rag-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11"

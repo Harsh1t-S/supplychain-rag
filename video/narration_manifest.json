@@ -1,0 +1,86 @@
+[
+  {
+    "id": "01_intro",
+    "start": 0.0,
+    "duration": 19.66,
+    "gap_after": 0.6,
+    "text": "This is a retrieval augmented generation assistant over two internal documents from Meridian Components. One is a quarterly supply chain review, full of numbers. The other is a procurement policy handbook, full of rules. Today a buyer reads one to find the figure, then hunts through the other to find which clause it triggers. This answers both from a single question."
+  },
+  {
+    "id": "02_index",
+    "start": 20.26,
+    "duration": 20.62,
+    "gap_after": 3.5,
+    "text": "I'll index both PDFs. Text is extracted page by page, split at twelve hundred characters with two hundred overlap, embedded with text embedding three small, and stored in ChromaDB. Twelve hundred is deliberate. Both documents are dominated by tables, and at eight hundred the supplier scorecard splits across a boundary, so the retriever returns half a table."
+  },
+  {
+    "id": "03_confirm",
+    "start": 44.38,
+    "duration": 6.65,
+    "gap_after": 1.5,
+    "text": "Two files, twenty two chunks. Both go into the same collection, which is what makes cross document questions possible."
+  },
+  {
+    "id": "04_persistence",
+    "start": 52.53,
+    "duration": 7.83,
+    "gap_after": 4.5,
+    "text": "Now I stop the app and restart it. Chroma persists to disk, so the index survives with no re-uploading. Still twenty two chunks."
+  },
+  {
+    "id": "05_q1_setup",
+    "start": 64.85,
+    "duration": 12.19,
+    "gap_after": 1.0,
+    "text": "First cross document question. Microcontrollers are imported with a forty six day lead time. How many days of safety stock? The lead time is in the review. The formula is in the handbook. Neither answers it alone."
+  },
+  {
+    "id": "06_q1_answer",
+    "start": 78.04,
+    "duration": 16.66,
+    "gap_after": 2.0,
+    "text": "Forty six times nought point two five is eleven and a half days. But the part is imported from a Critical supplier, which carries a thirty day floor, and the policy says the higher value wins. So thirty days, not eleven and a half. Underneath, one citation from each document, with page numbers."
+  },
+  {
+    "id": "07_q2_setup",
+    "start": 96.7,
+    "duration": 9.06,
+    "gap_after": 1.0,
+    "text": "Second one. Kaveri Metals recorded eighty eight point one percent on time delivery and eleven hundred and fifty defects per million. Which clauses does that trigger?"
+  },
+  {
+    "id": "08_q2_answer",
+    "start": 106.76,
+    "duration": 23.23,
+    "gap_after": 2.0,
+    "text": "Clause six point one for delivery below ninety percent: written warning and a weekly review call. Clause six point three for defects above five hundred: the supplier bears rework at one hundred and twenty rupees per unit, plus full incoming inspection at their cost. And it correctly does not fire clause six point two, which needs two consecutive quarters below eighty five percent. It is reading the boundary, not pattern matching."
+  },
+  {
+    "id": "09_chunks",
+    "start": 131.99,
+    "duration": 12.63,
+    "gap_after": 2.5,
+    "text": "The retrieved chunks view confirms the context came from both PDFs. With a top k of three, all three chunks come from one document and these questions fail. Six is the smallest value that reliably spans both."
+  },
+  {
+    "id": "10_trap",
+    "start": 147.12,
+    "duration": 14.21,
+    "gap_after": 2.0,
+    "text": "Finally, the refusal test. What is the annual salary of the Head of Procurement? Neither document contains salary data. Ungrounded, a model invents a confident, plausible, fictional number. This one says the information is not available."
+  },
+  {
+    "id": "11_api",
+    "start": 163.33,
+    "duration": 9.52,
+    "gap_after": 1.0,
+    "text": "The same logic is exposed as a FastAPI service with ingest, ask and stats endpoints. Ask returns the answer with the file and page behind every source."
+  },
+  {
+    "id": "12_outro",
+    "start": 173.85,
+    "duration": 5.54,
+    "gap_after": 0.0,
+    "text": "Every answer is traceable to a page, and when the answer isn't there, the system says so."
+  }
+]

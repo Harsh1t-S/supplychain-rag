@@ -1,0 +1,15 @@
+# Core
+openai>=1.40.0
+chromadb>=0.5.0
+pypdf>=4.2.0
+langchain-text-splitters>=0.2.0
+python-dotenv>=1.0.0
+
+# Interface
+streamlit>=1.36.0
+
+# Optional FastAPI backend (section 6 bonus)
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+requests>=2.32.0

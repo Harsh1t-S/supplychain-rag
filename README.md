@@ -383,7 +383,7 @@ supplychain-rag/
 │   └── main.py               # optional FastAPI backend
 ├── data/                     # the two provided PDFs
 ├── chroma_db/                # persisted vector store (gitignored)
-├── docs/                     # screenshots + generated test answers
+├── docs/                     # generated test answers (see docs/README.md)
 ├── deploy/                   # Render blueprint, Dockerfile, hosting notes
 ├── video/                    # Piper TTS narration + recording helper
 ├── .streamlit/config.toml    # dark theme, headless server

@@ -30,8 +30,13 @@ CHUNK_OVERLAP = 200
 
 # --- models ----------------------------------------------------------------
 
-EMBEDDING_MODEL = "text-embedding-3-small"
-LLM_MODEL = "gpt-4o"
+# The defaults are what the brief mandates. They are overridable from .env only
+# so the same code can run through an OpenAI-compatible gateway, which requires
+# provider-prefixed slugs (openai/gpt-4o) for the identical models. The OpenAI
+# SDK picks up OPENAI_BASE_URL from the environment on its own, so nothing below
+# the config layer changes.
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
+LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
 TEMPERATURE = 0.0
 
 # --- retrieval -------------------------------------------------------------

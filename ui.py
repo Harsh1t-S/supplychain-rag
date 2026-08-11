@@ -24,18 +24,20 @@ CSS = f"""
 <style>
   /* Hide the Streamlit toolbar so the app reads as a product rather than a
      notebook -- it also keeps the Deploy button out of submitted screenshots. */
-  [data-testid="stToolbar"], #MainMenu, footer {{ visibility: hidden; height: 0; }}
+  /* Hide only the Deploy button and the overflow menu -- NOT the whole
+     toolbar. The control that reopens a collapsed sidebar lives inside the
+     toolbar, so hiding the toolbar wholesale leaves the user with no way to
+     get the sidebar back once they close it. In Streamlit 1.61 that control
+     is stExpandSidebarButton. */
+  [data-testid="stToolbarActions"], [data-testid="stHeaderActionElements"],
+  #MainMenu, footer {{ visibility: hidden; height: 0; }}
 
-  /* Hiding the toolbar also buries the control that reopens a collapsed
-     sidebar, which strands the user with no way to get it back. Put it
-     explicitly back on top. */
-  [data-testid="stSidebarCollapsedControl"] {{
-    visibility: visible !important; height: auto !important;
-    opacity: 1 !important; z-index: 999999 !important;
-  }}
-  [data-testid="stSidebarCollapsedControl"] button {{
+  [data-testid="stHeader"] {{ background: transparent; }}
+
+  [data-testid="stExpandSidebarButton"] {{ visibility: visible !important; }}
+  [data-testid="stExpandSidebarButton"] button {{
     background: #111A2B !important; border: 1px solid #1E2C44 !important;
-    border-radius: 9px !important;
+    border-radius: 9px !important; color: #C7D6E6 !important;
   }}
 
   .block-container {{ padding-top: 3.1rem; padding-bottom: 4rem; max-width: 1180px; }}

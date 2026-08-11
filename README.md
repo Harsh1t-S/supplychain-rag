@@ -205,6 +205,33 @@ Play `narration_full.mp3` in one ear while recording and follow the cue sheet.
 
 ---
 
+## The threshold rule, and why it exists
+
+Question 9 asks which suppliers fall below the B rating band on on-time delivery
+alone. The handbook sets that floor at **75%**, and the worst supplier in the
+quarter is Shenzhen Rui Electronics at 79.5% — so the correct answer is that
+**nobody falls below band B**, and the real finding is Shenzhen Rui breaching
+clause 6.2 with two consecutive quarters under 85%.
+
+The system originally named Shenzhen Rui and Trident as falling below band B.
+Retrieval was not at fault: both documents were reached. The model had confused
+the 90% band-A condition with the 75% band-B floor.
+
+Adding rule 4's threshold instruction produced a partial fix — it began quoting
+the correct condition and then still concluded the supplier breached it, in
+consecutive sentences. Only when the rule required it to state *in words* whether
+the figure sits above or below the quoted threshold, before drawing a conclusion,
+did the answer come out right:
+
+> Since Shenzhen Rui Electronics is above 75%, it does not fall below the B
+> rating band based on on-time delivery.
+
+The lesson worth recording: giving a model the correct rule is not the same as
+getting it to apply the rule. Making the comparison an explicit, separate step
+is what closed the gap.
+
+---
+
 ## The prompt
 
 The full system prompt sent with every question, from [`rag.py`](rag.py). Rule 1
@@ -228,6 +255,13 @@ Rules:
    in the form [Document name, p. N].
 4. Quote exact figures, percentages, clause numbers and dates as they appear.
    Never round or approximate a number that is stated precisely.
+   Before deciding that a threshold or rating band is met, quote the exact
+   numeric condition from the handbook, then state in words whether the
+   supplier's figure is above or below it, and only then give your conclusion.
+   Do not assert that a figure breaches a threshold it is numerically above.
+   If no supplier meets the condition, say so plainly -- "no supplier falls
+   below this band" is a valid and often correct answer, and is better than
+   naming the worst performer for the sake of naming someone.
 5. If the context contains figures that contradict each other, say so rather
    than silently picking one.
 6. Be direct. A buyer is going to act on this answer.

@@ -1,10 +1,10 @@
 # Test question results
 
-Generated 11 August 2026, 17:40
+Generated 11 August 2026, 21:33
 
 - Chunks indexed: **22** (Meridian_Procurement_Policy_Handbook_v4.2.pdf: 12, Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf: 10)
 - Chunk size / overlap: **1200 / 200**
-- Embeddings: `openai/text-embedding-3-small` · LLM: `openai/gpt-4o` · top_k: **6**
+- Embeddings: `text-embedding-3-small` · LLM: `gpt-4o` · top_k: **6**
 
 ---
 
@@ -18,14 +18,14 @@ The supplier with the highest spend in Q1 was Shenzhen Rui Electronics, with a s
 
 **Sources retrieved:**
 
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.6214)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.5374)
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.5268)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.5226)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.6213)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.5375)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.5269)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.5227)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.6214)
+**Chunk 1** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.6213)
 
 ```
 Germany
@@ -59,7 +59,7 @@ recommended for the Supplier of the Year shortlist.
 Supply Chain Performance Review — Q1 FY 2025-26 Page 1 of 3
 ```
 
-**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.6059)
+**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.6063)
 
 ```
 estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed microcontroller shipments from
@@ -103,7 +103,7 @@ Malaysia
 Weighted
 ```
 
-**Chunk 3** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.5374)
+**Chunk 3** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.5375)
 
 ```
 attributable to incoming material was ₹0.74 crore, comprising rework of ₹0.41 crore, sorting and containment of
@@ -113,7 +113,7 @@ Boards at 640 PPM. Both suppliers have been placed under 100% incoming inspectio
 Supply Chain Performance Review — Q1 FY 2025-26 Page 2 of 3
 ```
 
-**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.5353)
+**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.5357)
 
 ```
 Supply Chain Performance Review — Q1 FY 2025-26Meridian Components Pvt. Ltd. Automotive Electronic Control Units & Wiring Harnesses Registered Office:
@@ -131,7 +131,7 @@ estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed 
 Shenzhen Rui Electronics, our single source for that part.
 ```
 
-**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5268)
+**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5269)
 
 ```
 A 90 and above Preferred — eligible for new business and long-term agreements
@@ -150,7 +150,7 @@ improvement plan within 15 working days. Failure to submit the plan escalates th
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
 ```
 
-**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.5226)
+**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.5227)
 
 ```
 reports were requested from both; Kaveri responded within the required window, Trident's response was received
@@ -196,21 +196,21 @@ Electronics
 
 **Answer:**
 
-Seven line-stoppage events were recorded in Q1, totaling 41 hours of downtime. The causes were as follows:
+Seven line stoppages occurred in Q1, totaling 41 hours of downtime. The causes were as follows:
 
-1. Microcontroller shortage due to a vessel roll-over at Shenzhen on 22 April 2025, causing 4 hours of downtime.
-2. Microcontroller shortage due to a 9-day customs hold at Nhava Sheva on 09 May 2025, causing 11 hours of downtime.
-3. PCB lot rejected at incoming inspection (Trident) on 14 May 2025, causing 3 hours of downtime.
-4. Microcontroller shortage due to a partial shipment received on 27 May 2025, causing 6 hours of downtime.
-5. Transporter strike on the Coimbatore–Pune corridor on 06 June 2025, causing 5 hours of downtime.
-6. PCB lot rejected at incoming inspection (Trident) on 17 June 2025, causing 8 hours of downtime.
-7. Microcontroller shortage due to an allocation shortfall from the supplier on 25 June 2025, causing 4 hours of downtime [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 2, 5].
+1. Microcontroller shortage due to a vessel roll-over at Shenzhen (4 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 2].
+2. Microcontroller shortage due to a 9-day customs hold at Nhava Sheva (11 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 2].
+3. PCB lot rejected at incoming inspection from Trident Circuit Boards (3 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 5].
+4. Microcontroller shortage due to partial shipment received (6 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 5].
+5. Transporter strike on the Coimbatore–Pune corridor (5 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 5].
+6. PCB lot rejected at incoming inspection from Trident Circuit Boards (8 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 5].
+7. Microcontroller shortage due to allocation shortfall from the supplier (4 hours) [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 5].
 
 **Sources retrieved:**
 
 - `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.5008)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.467)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4235)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.4672)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4239)
 
 <details><summary>Retrieved chunks</summary>
 
@@ -238,7 +238,7 @@ Seven line-stoppage events were recorded, totalling 41 hours of downtime and an 
 2 09 May 2025Chakan 11 Microcontroller shortage — 9-day customs hold at Nhava Sheva
 ```
 
-**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.467)
+**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4672)
 
 ```
 estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed microcontroller shipments from
@@ -307,7 +307,7 @@ Finished goods cover (days) 16 18 15
 T otal inventory value (₹ crore) 61.2 68.4 58.0
 ```
 
-**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4235)
+**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4239)
 
 ```
 focused on die maintenance
@@ -337,7 +337,7 @@ Copper price. Copper prices are up approximately 14% year on year, putting press
 Baltic Wire GmbH has signalled a price revision request effective from October 2025.
 ```
 
-**Chunk 5** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.4073)
+**Chunk 5** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.4074)
 
 ```
 1 22 Apr 2025 Chakan 4 Microcontroller shortage — vessel roll-over at Shenzhen
@@ -356,7 +356,7 @@ attributable to incoming material was ₹0.74 crore, comprising rework of ₹0.4
 ₹0.19 crore, and scrap of ₹0.14 crore.
 ```
 
-**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4027)
+**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4026)
 
 ```
 reports were requested from both; Kaveri responded within the required window, Trident's response was received
@@ -402,17 +402,17 @@ Electronics
 
 **Answer:**
 
-The approval authority for a purchase order worth ₹1.4 crore is the Chief Operating Officer [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 1].
+The approval authority for a purchase order worth ₹1.4 crore is the Chief Operating Officer. This falls under the category "Above ₹1 crore and up to ₹5 crore" [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 1].
 
 **Sources retrieved:**
 
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.6463)
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 3 (similarity 0.5203)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.6464)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 3 (similarity 0.5204)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.4497)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.6463)
+**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.6464)
 
 ```
 2. Supplier classification
@@ -461,7 +461,7 @@ equity ratio below 2.0 and a positive net worth. A supplier failing this check m
 approval of the Chief Operating Officer and a reduced payment term.
 ```
 
-**Chunk 3** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.3 (similarity 0.5203)
+**Chunk 3** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.3 (similarity 0.5204)
 
 ```
 inbound purchases are contracted Ex-Works with freight arranged by Meridian. Exports to customers are contracted
@@ -526,7 +526,7 @@ above the normal approval authority.
 Procurement Policy and Supplier Management Handbook Page 2 of 3
 ```
 
-**Chunk 6** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.4472)
+**Chunk 6** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.4475)
 
 ```
 Procurement Policy and Supplier Management
@@ -555,12 +555,12 @@ Every supplier must be classified at onboarding and re-classified annually. Clas
 
 **Answer:**
 
-The four supplier classification categories are Critical, Strategic, Standard, and Tail. A supplier qualifies as Critical if they meet any one of the following criteria: they are a single-source for any part, have an annual spend above ₹10 crore, or supply a safety-related component [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 1].
+The four supplier classification categories are Critical, Strategic, Standard, and Tail. A supplier qualifies as Critical if any one of the following criteria is met: they are a single-source for any part, the annual spend is above ₹10 crore, or they supply a safety-related component [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 1].
 
 **Sources retrieved:**
 
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.5949)
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.5488)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.5491)
 
 <details><summary>Retrieved chunks</summary>
 
@@ -592,7 +592,7 @@ Above ₹25 lakh and up to ₹1 croreHead of Procurement
 Above ₹1 crore and up to ₹5 croreChief Operating Officer
 ```
 
-**Chunk 2** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5488)
+**Chunk 2** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5491)
 
 ```
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
@@ -610,7 +610,7 @@ treated as force majeure.
 7. Sourcing rules
 ```
 
-**Chunk 3** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5441)
+**Chunk 3** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5442)
 
 ```
 event within 7 days of its occurrence. Port congestion, customs delays, and currency movement are expressly not
@@ -632,7 +632,7 @@ above the normal approval authority.
 Procurement Policy and Supplier Management Handbook Page 2 of 3
 ```
 
-**Chunk 4** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.523)
+**Chunk 4** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.5231)
 
 ```
 equity ratio below 2.0 and a positive net worth. A supplier failing this check may still be onboarded with the written
@@ -652,7 +652,7 @@ for all classes.
 Procurement Policy and Supplier Management Handbook Page 1 of 3
 ```
 
-**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5185)
+**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5186)
 
 ```
 A 90 and above Preferred — eligible for new business and long-term agreements
@@ -671,7 +671,7 @@ improvement plan within 15 working days. Failure to submit the plan escalates th
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
 ```
 
-**Chunk 6** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.4836)
+**Chunk 6** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.4837)
 
 ```
 Contract and non-disclosure agreement. Executed on the standard Meridian template. Any deviation from the
@@ -706,26 +706,24 @@ C 60 to 74 Watch — existing business only, improvement plan required
 
 **Answer:**
 
-Kaveri Metals recorded an on-time delivery of 88.1% and a defect rate of 1,150 parts per million in Q1.
+Kaveri Metals recorded an on-time delivery of 88.1% in Q1, which triggers clause 6.1 of the procurement policy. According to clause 6.1, "On-time delivery below 90% in any quarter" results in a written warning being issued to the supplier within 10 working days of quarter close, and the supplier must move to a weekly delivery review call until performance recovers above 90% for one full quarter [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
 
-1. **On-time delivery below 90%**: This triggers clause 6.1, which states that a written warning must be issued to the supplier within 10 working days of the quarter close, and the supplier must move to a weekly delivery review call until performance recovers above 90% for one full quarter [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
+Additionally, Kaveri Metals recorded a defect rate of 1,150 parts per million, which triggers clause 6.3. Clause 6.3 states that a defect rate above 500 parts per million in any quarter requires the supplier to bear the cost of rework at a standard recovery rate of ₹120 per affected unit, and 100% incoming inspection is imposed at the supplier's cost until three consecutive lots are accepted without defect [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
 
-2. **Defect rate above 500 parts per million**: This triggers clause 6.3, which requires the supplier to bear the cost of rework at a standard recovery rate of ₹120 per affected unit, and imposes 100% incoming inspection at the supplier's cost until three consecutive lots are accepted without defect [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
-
-The buyer must ensure that these actions are implemented according to the policy.
+Therefore, the buyer must issue a written warning to Kaveri Metals, initiate weekly delivery review calls, and ensure that Kaveri Metals bears the cost of rework and undergoes 100% incoming inspection until the defect rate is resolved.
 
 **Sources retrieved:**
 
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.6469)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.647)
 - `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.6014)
 - `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.5884)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.5408)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.5411)
 
 **Retrieval spread:** both documents
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.6469)
+**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.647)
 
 ```
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
@@ -833,7 +831,7 @@ B 75 to 89 Approved — eligible for new business
 C 60 to 74 Watch — existing business only, improvement plan required
 ```
 
-**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.5408)
+**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.5411)
 
 ```
 estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed microcontroller shipments from
@@ -887,13 +885,13 @@ Weighted
 
 **Answer:**
 
-The sourcing policy requires that every part supplied by a supplier classified as Critical must have a qualified second source in place within 12 months of that classification being assigned [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2, Clause 7.1]. The company is currently addressing this requirement by working on the qualification of an alternate supplier for microcontrollers, as mentioned in the supply chain review [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1].
+The sourcing policy requires that every part supplied by a supplier classified as Critical must have a qualified second source in place within 12 months of that classification being assigned [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2, Clause 7.1]. The company is currently in the process of qualifying an alternate supplier for microcontrollers, as mentioned in the supply chain review [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1].
 
 **Sources retrieved:**
 
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.5077)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.4959)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4849)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.5078)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.4941)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4845)
 - `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.4796)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.4275)
 
@@ -901,7 +899,7 @@ The sourcing policy requires that every part supplied by a supplier classified a
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5077)
+**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5078)
 
 ```
 event within 7 days of its occurrence. Port congestion, customs delays, and currency movement are expressly not
@@ -923,7 +921,7 @@ above the normal approval authority.
 Procurement Policy and Supplier Management Handbook Page 2 of 3
 ```
 
-**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4959)
+**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4941)
 
 ```
 estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed microcontroller shipments from
@@ -967,7 +965,7 @@ Malaysia
 Weighted
 ```
 
-**Chunk 3** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4849)
+**Chunk 3** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4845)
 
 ```
 focused on die maintenance
@@ -1016,7 +1014,7 @@ attributable to incoming material was ₹0.74 crore, comprising rework of ₹0.4
 ₹0.19 crore, and scrap of ₹0.14 crore.
 ```
 
-**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.4745)
+**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.4746)
 
 ```
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
@@ -1064,20 +1062,20 @@ Procurement Policy and Supplier Management Handbook Page 1 of 3
 
 **Answer:**
 
-According to the safety stock policy, for imported parts supplied by a critical supplier, the minimum safety stock is 30 days [Meridian_Procurement_Policy_Handbook_v4.2, p. 3]. The calculated safety stock for microcontrollers, with a 46-day lead time, would be 46 days × 0.25 = 11.5 days. However, since the minimum floor for critical suppliers is 30 days, the higher value applies. Therefore, 30 days of stock should be held for microcontrollers.
+According to the safety stock policy, for imported parts supplied by a critical supplier, the minimum safety stock is 30 days [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 3]. The calculated safety stock is lead time in days × 0.25, which for microcontrollers with a 46-day lead time is 46 × 0.25 = 11.5 days. However, since the minimum floor for critical suppliers is 30 days, the higher value applies. Therefore, 30 days of stock should be held for microcontrollers.
 
 **Sources retrieved:**
 
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.5168)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.5167)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 3 (similarity 0.497)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.4772)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4528)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.4765)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4524)
 
 **Retrieval spread:** both documents
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.5168)
+**Chunk 1** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.5167)
 
 ```
 1 22 Apr 2025 Chakan 4 Microcontroller shortage — vessel roll-over at Shenzhen
@@ -1142,7 +1140,7 @@ inbound purchases are contracted Ex-Works with freight arranged by Meridian. Exp
 CIF unless the customer specifies otherwise in a signed agreement.
 ```
 
-**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4772)
+**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4765)
 
 ```
 estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed microcontroller shipments from
@@ -1186,7 +1184,7 @@ Malaysia
 Weighted
 ```
 
-**Chunk 5** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4528)
+**Chunk 5** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4524)
 
 ```
 focused on die maintenance
@@ -1216,7 +1214,7 @@ Copper price. Copper prices are up approximately 14% year on year, putting press
 Baltic Wire GmbH has signalled a price revision request effective from October 2025.
 ```
 
-**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.42)
+**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4209)
 
 ```
 Supply Chain Performance Review — Q1 FY 2025-26Meridian Components Pvt. Ltd. Automotive Electronic Control Units & Wiring Harnesses Registered Office:
@@ -1244,14 +1242,14 @@ Shenzhen Rui Electronics, our single source for that part.
 
 **Answer:**
 
-The defect rate for Trident Circuit Boards was 640 parts per million [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1]. According to the procurement policy, Clause 6.3 states that if the defect rate is above 500 parts per million in any quarter, the supplier bears the cost of rework at a standard recovery rate of ₹120 per affected unit, and 100% incoming inspection is imposed at the supplier's cost until three consecutive lots are accepted without defect [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
+According to the procurement policy, a defect rate above 500 parts per million in any quarter means the supplier bears the cost of rework at a standard recovery rate of ₹120 per affected unit, and 100% incoming inspection is imposed at the supplier's cost until three consecutive lots are accepted without defect [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2, Clause 6.3]. Trident Circuit Boards had a defect rate of 640 parts per million, which is above the 500 PPM threshold, so these consequences apply.
 
 **Sources retrieved:**
 
 - `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 2 (similarity 0.5436)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4901)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.4821)
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.4779)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 3 (similarity 0.4896)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.482)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.4783)
 
 **Retrieval spread:** both documents
 
@@ -1267,7 +1265,7 @@ Boards at 640 PPM. Both suppliers have been placed under 100% incoming inspectio
 Supply Chain Performance Review — Q1 FY 2025-26 Page 2 of 3
 ```
 
-**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.5123)
+**Chunk 2** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.2 (similarity 0.5124)
 
 ```
 1 22 Apr 2025 Chakan 4 Microcontroller shortage — vessel roll-over at Shenzhen
@@ -1286,7 +1284,7 @@ attributable to incoming material was ₹0.74 crore, comprising rework of ₹0.4
 ₹0.19 crore, and scrap of ₹0.14 crore.
 ```
 
-**Chunk 3** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4901)
+**Chunk 3** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.3 (similarity 0.4896)
 
 ```
 focused on die maintenance
@@ -1316,7 +1314,7 @@ Copper price. Copper prices are up approximately 14% year on year, putting press
 Baltic Wire GmbH has signalled a price revision request effective from October 2025.
 ```
 
-**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4821)
+**Chunk 4** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.482)
 
 ```
 estimated ₹1.9 crore in lost output. Four of the seven were caused by delayed microcontroller shipments from
@@ -1360,7 +1358,7 @@ Malaysia
 Weighted
 ```
 
-**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.4779)
+**Chunk 5** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.4783)
 
 ```
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
@@ -1378,7 +1376,7 @@ treated as force majeure.
 7. Sourcing rules
 ```
 
-**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.449)
+**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.4493)
 
 ```
 Germany
@@ -1422,24 +1420,31 @@ Supply Chain Performance Review — Q1 FY 2025-26 Page 1 of 3
 
 **Answer:**
 
-The suppliers that fall below the B rating band on on-time delivery alone are Shenzhen Rui Electronics and Trident Circuit Boards. Shenzhen Rui Electronics has an on-time delivery rate of 79.5% [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1], and Trident Circuit Boards has an on-time delivery rate of 84.6% [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1]. According to the procurement policy, a supplier delivering below 90% cannot score in band A, and a supplier delivering below 75% cannot score in band B [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
+The suppliers that fall below the B rating band on on-time delivery alone are:
 
-The escalation path for these suppliers is as follows:
-1. For Shenzhen Rui Electronics, since its on-time delivery has fallen below 85% for two consecutive quarters, clause 6.2 applies. This includes a written warning, a debit note equal to 2% of the quarterly invoice value, and the requirement to submit a formal improvement plan within 15 working days [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
-2. For Trident Circuit Boards, since its on-time delivery is below 90% but above 85%, clause 6.1 applies. This involves a written warning and a move to a weekly delivery review call until performance recovers above 90% for one full quarter [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
+1. Shenzhen Rui Electronics, with an on-time delivery rate of 79.5% [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1]. According to the policy, "a supplier delivering below 75% cannot score in band B" [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2]. Since Shenzhen Rui Electronics is above 75%, it does not fall below the B rating band based on on-time delivery alone.
+
+2. Trident Circuit Boards, with an on-time delivery rate of 84.6% [Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf, p. 1]. This is above the 75% threshold for band B, so it does not fall below the B rating band based on on-time delivery alone.
+
+No supplier falls below the B rating band based on on-time delivery alone.
+
+The escalation path for Shenzhen Rui Electronics, which has an on-time delivery below 85% for two consecutive quarters, involves:
+
+- Clause 6.2: A debit note equal to 2% of the quarterly invoice value is raised against the supplier, and the supplier must submit a formal improvement plan within 15 working days [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
+- If the improvement plan is not submitted, the matter escalates to clause 6.4, which involves placing the supplier on business hold [Meridian_Procurement_Policy_Handbook_v4.2.pdf, p. 2].
 
 **Sources retrieved:**
 
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.6909)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.691)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 3 (similarity 0.5851)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.5336)
-- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.52)
+- `Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf` page 1 (similarity 0.5197)
 
 **Retrieval spread:** both documents
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.6909)
+**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.691)
 
 ```
 A 90 and above Preferred — eligible for new business and long-term agreements
@@ -1458,7 +1463,7 @@ improvement plan within 15 working days. Failure to submit the plan escalates th
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
 ```
 
-**Chunk 2** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5926)
+**Chunk 2** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5927)
 
 ```
 6.3 Defect rate above 500 parts per million in any quarter. The supplier bears the cost of rework at a standard
@@ -1496,7 +1501,7 @@ cause and a verified corrective action, not merely the resumption of supply.
 An emergency purchase outside the normal process is permitted only where a production line stoppage is likely within
 ```
 
-**Chunk 4** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5672)
+**Chunk 4** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.2 (similarity 0.5673)
 
 ```
 Contract and non-disclosure agreement. Executed on the standard Meridian template. Any deviation from the
@@ -1541,7 +1546,7 @@ for all classes.
 Procurement Policy and Supplier Management Handbook Page 1 of 3
 ```
 
-**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.52)
+**Chunk 6** — Meridian_Supply_Chain_Review_Q1_FY2025-26.pdf p.1 (similarity 0.5197)
 
 ```
 Germany
@@ -1589,13 +1594,13 @@ That information is not available in the uploaded documents.
 
 **Sources retrieved:**
 
-- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.5852)
+- `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 1 (similarity 0.5853)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 3 (similarity 0.4642)
 - `Meridian_Procurement_Policy_Handbook_v4.2.pdf` page 2 (similarity 0.3733)
 
 <details><summary>Retrieved chunks</summary>
 
-**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.5852)
+**Chunk 1** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.5853)
 
 ```
 Up to ₹5 lakh Purchase Officer
@@ -1667,7 +1672,7 @@ Handbook restructured; scorecard weights introduced
 2024
 ```
 
-**Chunk 4** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.4011)
+**Chunk 4** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.1 (similarity 0.4013)
 
 ```
 Procurement Policy and Supplier Management
@@ -1711,7 +1716,7 @@ B 75 to 89 Approved — eligible for new business
 C 60 to 74 Watch — existing business only, improvement plan required
 ```
 
-**Chunk 6** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.3 (similarity 0.3703)
+**Chunk 6** — Meridian_Procurement_Policy_Handbook_v4.2.pdf p.3 (similarity 0.3702)
 
 ```
 13. Revision history

@@ -26,6 +26,18 @@ CSS = f"""
      notebook -- it also keeps the Deploy button out of submitted screenshots. */
   [data-testid="stToolbar"], #MainMenu, footer {{ visibility: hidden; height: 0; }}
 
+  /* Hiding the toolbar also buries the control that reopens a collapsed
+     sidebar, which strands the user with no way to get it back. Put it
+     explicitly back on top. */
+  [data-testid="stSidebarCollapsedControl"] {{
+    visibility: visible !important; height: auto !important;
+    opacity: 1 !important; z-index: 999999 !important;
+  }}
+  [data-testid="stSidebarCollapsedControl"] button {{
+    background: #111A2B !important; border: 1px solid #1E2C44 !important;
+    border-radius: 9px !important;
+  }}
+
   .block-container {{ padding-top: 3.1rem; padding-bottom: 4rem; max-width: 1180px; }}
 
   html, body, [class*="css"] {{
